@@ -5,7 +5,7 @@ function App() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:4000/message")
+    fetch("https://seating-arrangement-api-production.up.railway.app/message")
       .then((res) => res.json())
       .then((data) => setMessage(data.message));
   }, []);
