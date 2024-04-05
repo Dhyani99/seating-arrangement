@@ -6,6 +6,7 @@ function App() {
 
   useEffect(() => {
     fetch("https://seating-arrangement-api-production.up.railway.app/message")
+    // fetch("http://localhost:4000/message")
       .then((res) => res.json())
       .then((data) => setMessage(data.message));
   }, []);
