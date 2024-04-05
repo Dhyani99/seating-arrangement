@@ -8,8 +8,6 @@ function App() {
     fetch("https://seating-arrangement-api-production.up.railway.app/message")
       .then((res) => res.json())
       .then((data) => setMessage(data.message));
-
-    console.log(message)
   }, []);
 
   return (
